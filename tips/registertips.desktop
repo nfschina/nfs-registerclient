@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/python /usr/share/registerclient/registershowtips.pyc
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[zh_CN]=系统注册提醒
+Name=register tips
+Comment[zh_CN]=系统注册提醒
+Comment=register tips
+X-GNOME-Autostart-Delay=35

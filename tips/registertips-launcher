@@ -1,0 +1,7 @@
+#!/bin/sh
+
+#app_command='/usr/share/registerclient/registershowtips.pyc $@'
+
+#su - -c "${app_command}"
+
+sudo /usr/bin/python /usr/share/registerclient/registershowtips.pyc

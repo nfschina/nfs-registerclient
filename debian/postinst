@@ -1,0 +1,31 @@
+#!/bin/sh
+
+sudo_line=`grep -w "ALL ALL=(ALL) NOPASSWD:/usr/share/registerclient/savestatus.sh" /etc/sudoers | wc -l`
+if [ $sudo_line = "0" ];then
+	echo "ALL ALL=(ALL) NOPASSWD:/usr/share/registerclient/savestatus.sh" >> /etc/sudoers
+	echo "modify savestatus.sh for root."
+fi
+
+sudo_line=`grep -w "ALL ALL=(ALL) NOPASSWD:/usr/share/registerclient/registerafter.sh" /etc/sudoers | wc -l`
+if [ $sudo_line = "0" ];then
+	echo "ALL ALL=(ALL) NOPASSWD:/usr/share/registerclient/registerafter.sh" >> /etc/sudoers
+	echo "modify registerafter.sh for root."
+fi
+
+sudo_line=`grep -w "ALL ALL=(ALL) NOPASSWD:/usr/share/registerclient/updatestatus.sh" /etc/sudoers | wc -l`
+if [ $sudo_line = "0" ];then
+	echo "ALL ALL=(ALL) NOPASSWD:/usr/share/registerclient/updatestatus.sh" >> /etc/sudoers
+	echo "modify updatestatus.sh for root."
+fi
+if [ -f /usr/share/registerclient/status.ini ]; then
+	echo 'update status.ini'
+else
+	echo "MA==" > /usr/share/registerclient/status.ini
+	echo "" >> /usr/share/registerclient/status.ini
+fi
+touch /usr/share/registerclient/reginfo
+chmod a+w /usr/share/registerclient/reginfo
+chmod a+w /usr/share/registerclient/status.ini
+chmod a+x /usr/share/registerclient/unregister-indicator.pyc
+# 打包时若不能包含.so文件
+mv /usr/lib/python2.7/dist-packages/pysqlcipher3/_sqliteso /usr/lib/python2.7/dist-packages/pysqlcipher3/_sqlite.so

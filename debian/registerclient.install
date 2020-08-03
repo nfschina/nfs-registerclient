@@ -1,0 +1,23 @@
+clientdisplay.pyc /usr/bin/
+configure_file/registerclient.desktop /usr/share/applications/
+configure_file/registerclient-launcher /usr/bin/
+configure_file/registerclient.png /usr/share/registerclient/pixmaps/
+ui /usr/share/registerclient/
+pic /usr/share/registerclient/
+lib/libsqlcipher.so.0 /usr/lib/registerclient/
+pysqlcipher3 /usr/lib/python2.7/dist-packages/
+registerafter.sh /usr/share/registerclient/
+savestatus.sh /usr/share/registerclient/
+tips/registershowtips.pyc /usr/share/registerclient/
+tips/registertips.desktop /etc/xdg/autostart
+regcode-dbus-server /usr/bin/
+regcode-dbus-server.pyc /usr/bin/
+configure_file/com.nfs.register.conf /etc/dbus-1/system.d/
+configure_file/com.nfs.register.service /usr/share/dbus-1/system-services
+
+unregister-indicator.pyc /usr/share/registerclient/
+configure_file/unregister-indicator /usr/share/registerclient/
+configure_file/unregister-indicator.desktop /etc/xdg/autostart/
+style.css /usr/share/registerclient/
+icons/hicolor /usr/share/icons/
+

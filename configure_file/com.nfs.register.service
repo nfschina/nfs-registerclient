@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=com.nfs.register
+Exec=/usr/bin/regcode-dbus-server
+User=root

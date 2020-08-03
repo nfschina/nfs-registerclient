@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=/usr/share/registerclient/unregister-indicator
+Name=Unregister Indicator
+Name[zh_CN]=未注册
+Comment=Unregister Indicator
+Icon=/usr/share/registerclient/pic/unregistered.png
+Terminal=false
+Type=Application
+Categories=Application
+NoDisplay=true

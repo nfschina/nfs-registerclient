@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=registerclient-launcher
+Name=registerclient
+Name[zh_CN]=注册客户端
+X-KDE-StartupNotify=true
+Comment=registerclient
+Comment[zh_CN]=注册客户端
+Icon=/usr/share/registerclient/pixmaps/registerclient.png
+Terminal=false
+Type=Application
+Categories=Application;Utility;

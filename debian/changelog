@@ -1,0 +1,226 @@
+registerclient (1.01+3nfs33) unstable; urgency=medium
+
+  * 解决cbs编译失败的问题
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Thu, 30 Apr 2020 11:14:55 +0800
+
+registerclient (1.01+3nfs32) unstable; urgency=medium
+
+  * bug#0355363: ［需求］专项局域网注册机制，迁移到通用版
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Sun, 26 Apr 2020 15:31:19 +0800
+
+registerclient (1.01+3nfs31) unstable; urgency=medium
+
+  * 解决pyc文件执行失败的问题
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Fri, 06 Dec 2019 16:30:38 +0800
+
+registerclient (1.01+3nfs30) unstable; urgency=medium
+
+  * 增加编译依赖python
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Fri, 06 Dec 2019 14:40:43 +0800
+
+registerclient (1.01+3nfs29) unstable; urgency=medium
+
+  * 将py文件编译成pyc文件打包
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Fri, 06 Dec 2019 13:38:15 +0800
+
+registerclient (1.01+3nfs28) unstable; urgency=medium
+
+  * 数据合规性处理，加密用户数据
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Sun, 10 Nov 2019 18:50:57 +0800
+
+registerclient (1.01+3nfs27) unstable; urgency=medium
+
+  * bug#0353373:system-uuid和system-serial-number均异常时，注册成功后客户端页面密钥信息显示为空
+  * 优化注册客户端启动慢的问题
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Thu, 24 Oct 2019 19:04:39 +0800
+
+registerclient (1.01+3nfs26) unstable; urgency=medium
+
+  * 修复BYD反馈的注册客户端启动慢（20s）的问题
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Tue, 22 Oct 2019 15:47:29 +0800
+
+registerclient (1.01+3nfs25) unstable; urgency=medium
+
+  * 修复问题0354167: 注册客户端-启动后，切换至其他用户，无法启动注册客户端且无任何提示
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Tue, 15 Oct 2019 14:38:09 +0800
+
+registerclient (1.01+3nfs24) unstable; urgency=medium
+
+  * 修复问题“可以点击多个注册客户端窗口出来”
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Sat, 12 Oct 2019 10:51:20 +0800
+
+registerclient (1.01+3nfs23) unstable; urgency=medium
+
+  * bug#0353806:U盘注册时，同一机器消耗多个注册码
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Tue, 17 Sep 2019 16:30:01 +0800
+
+registerclient (1.01+3nfs22) unstable; urgency=medium
+
+  * bug#0353182:livecd模式注册，安装完桌面显示未注册，输入新的注册码提示已注册
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Wed, 21 Aug 2019 11:12:44 +0800
+
+registerclient (1.01+3nfs21) unstable; urgency=medium
+
+  * bug#0353426:注册客户端-离线U盘注册，联网后U盘注册码未同步至服务端
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Thu, 15 Aug 2019 17:18:58 +0800
+
+registerclient (1.01+3nfs20) unstable; urgency=medium
+
+  * 增加u盘注册未验证时注册客户端页面显示注册码等信息
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Mon, 12 Aug 2019 13:29:28 +0800
+
+registerclient (1.01+3nfs19) unstable; urgency=medium
+
+  * bug#0353373: system-uuid和system-serial-number均异常时，注册成功后客户端页面密钥信息显示为空
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Thu, 08 Aug 2019 10:36:24 +0800
+
+registerclient (1.01+3nfs18) unstable; urgency=medium
+
+  *bug#0353347: 注册成功后，再次启动注册客户端，系统更新无法使用提示未注册 
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Tue, 06 Aug 2019 09:55:24 +0800
+
+registerclient (1.01+3nfs17) unstable; urgency=medium
+
+  * bug#0353345: system-uuid和system-serial-number均异常时，注册成功后再次启动注册客户端提示未注册
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Mon, 05 Aug 2019 21:16:56 +0800
+
+registerclient (1.01+3nfs16) unstable; urgency=medium
+
+  * bug#0353286: 支持自动读取BIOS信息自动完成注册验证
+  * bug#0353282: 已注册后，进入注册客户端页面显示注册码等信息
+  * bug#0353283: 服务端：注册码与BIOS 中system-id绑定
+
+ -- wqx <wqx@cbs-by-13-6.cpu-os.com>  Fri, 02 Aug 2019 20:34:24 +0800
+
+registerclient (1.01+3nfs15) unstable; urgency=medium
+
+  * bug#0353147: 离线输入正确注册码后连接网络依旧无法使用
+  * bug#0353146: 离线注册后联网不会自动检测是否成功
+
+ -- hukun <hukun@cpu-os.ac.cn>  Fri, 17 Jul 2019 10:06:05 +0800
+
+registerclient (1.01+3nfs14) unstable; urgency=medium
+
+  * bug#0352949: 优化了托盘区指示器图标
+
+ -- ZhangTao <zhangtao@cpu-os.ac.cn>  Fri, 28 Jun 2019 10:06:05 +0800
+
+registerclient (1.01+3nfs13) unstable; urgency=medium
+
+  * bug#0352949: 关闭了未注册的通知功能；更换了托盘图标
+
+ -- ZhangTao <zhangtao@cpu-os.ac.cn>  Thu, 20 Jun 2019 15:58:06 +0800
+
+registerclient (1.01+3nfs12) unstable; urgency=medium
+
+  * bug#0352949: 新增了托盘区的未注册指示器
+  * 优化了客户端界面，新增了客户信息的输入口
+
+ -- ZhangTao <zhangtao@cpu-os.ac.cn>  Wed, 19 Jun 2019 11:06:02 +0800
+
+registerclient (1.01+3nfs11) unstable; urgency=medium
+
+  * 添加获取注册状态接口
+
+ -- shishengliang <shengliang@cpu-os.ac.cn>  Mon, 17 Jun 2019 11:22:24 +0800
+
+registerclient (1.01+3nfs10) UNRELEASED; urgency=medium
+
+  * 修复bug#0352842：通用版本：通过注册客户端注册后会删除/var/lib/apt/lists中关于软件中心的list文件，导致软件中心中部分软件无法安装. 
+
+ -- shishengliang <shengliang@cpu-os.ac.cn>  Fri, 24 May 2019 19:55:11 +0800
+
+registerclient (1.01+3nfs9) unstable; urgency=medium
+
+  * 修复bug#0352786: 共性问题：注册程序不支持LVM模式的系统注册
+  * 
+
+ -- shishengliang <shengliang@cpu-os.ac.cn>  Mon, 20 May 2019 13:40:16 +0800
+
+registerclient (1.01+3nfs8) unstable; urgency=medium
+
+  * 移除注册客户端注册信息查看工具代码.
+  * 移除导入工具代码.
+  * 修改指定数据库名称为指定数据库目录nfs-register-code，获取其下所有数据库数据.
+
+ -- zhangsd <saidan@cpu-os.ac.cn>  Tue, 16 Apr 2019 11:24:50 +0800
+
+registerclient (1.01+3nfs7) unstable; urgency=medium
+
+  * 添加导出数据可视化工具，使用/opt/register/see-export-regcode来查看
+  * 
+
+ -- shishengliang <shengliang@cpu-os.ac.cn>   Fri, 12 Apr 2019 14:41:38 +0800
+
+registerclient (1.01+3nfs6) unstable; urgency=medium
+
+  * 修改在子进程中进行注册操作，防止ui阻塞。
+  * 
+
+ -- shishengliang <shengliang@cpu-os.ac.cn>  Thu, 11 Apr 2019 09:42:39 +0800
+
+registerclient (1.01+3nfs5) unstable; urgency=medium
+
+  * 去掉打开注册客户端时需要输入用户密码的步骤，改由后台dbus服务来进行注册
+  * 
+
+ -- shishengliang <shengliang@cpu-os.ac.cn>  Wed, 10 Apr 2019 17:22:27 +0800
+
+registerclient (1.01+3nfs4) unstable; urgency=medium
+
+  * 将u盘注册和普通注册按钮统一，当注册码输入框内没有任何输入时会使用u盘注册
+
+ -- shishengliang <shengliang@cpu-os.ac.cn>  Tue, 09 Apr 2019 09:30:42 +0800
+
+registerclient (1.01+3nfs3) unstable; urgency=medium
+
+  * 添加导入导出数据工具
+
+ -- shishengliang <shengliang@cpu-os.ac.cn>  Tue, 09 Apr 2019 08:57:51 +0800
+
+registerclient (1.01+3nfs2) unstable; urgency=low
+
+  * add register support use usb storage.
+
+ -- cdos <cdos@cdos.com>  Tue, 02 Apr 2019 10:29:02 +0800
+
+registerclient (1.01+3nfs1) unstable; urgency=low
+
+  * add register support without net connecting.
+
+ -- hechunni <chunni@nfschina.com>  Fri, 04 Jan 2019 15:11:54 +0800
+
+registerclient (1.01+2nfs1) unstable; urgency=low
+
+  * [0345040] add tip while startup
+
+ -- lvyinglong <yinglong@nfschina.com>  Tue, 16 Jan 2018 16:29:13 +0800
+
+registerclient (1.01+1nfs1) unstable; urgency=low
+
+  * rebuild
+
+ -- lvyinglong <yinglong@nfschina.com>  Tue, 19 Nov 2017 16:29:13 +0800
+
+registerclient (1.0) unstable; urgency=low
+
+  * rebuild
+
+ -- lvyinglong <yinglong@nfschina.com>  Tue, 19 Nov 2017 16:29:13 +0800

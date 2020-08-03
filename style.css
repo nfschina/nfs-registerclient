@@ -1,0 +1,20 @@
+.button-register
+{
+    background: #44A6E5;
+    color: #FFF;
+    border: 1px solid #3D95CF;
+}
+.button-register:hover
+{
+    background: #60b2e9;
+    border: 1px solid #419eda;
+}
+.button-register:active
+{
+    background: #3d95cf;
+    border: 1px solid #337dac;
+}
+.button-register:backdrop
+{
+    background: #408DBF;
+}
