@@ -1,0 +1,13 @@
+diff --git a/regcode-dbus-server.py b/regcode-dbus-server.py
+index e95f278..c2eae42 100644
+--- a/regcode-dbus-server.py
++++ b/regcode-dbus-server.py
+@@ -185,7 +185,7 @@ class DbusDaemon(dbus.service.Object):
+         return json.dumps(r)
+ 
+     def find_usb_storage(self):
+-        comm = 'find /media -maxdepth 3 -type d -name nfs-register-code 2>/dev/null'
++        comm = 'find /run/media -maxdepth 3 -type d -name nfs-register-code 2>/dev/null'
+         db_file_dir = os.popen(comm).readlines()
+         comm = 'find ' + db_file_dir[0].strip() + ' -maxdepth 3 -type f -name "*.db" 2>/dev/null'
+         db_file_list = os.popen(comm).readlines()
